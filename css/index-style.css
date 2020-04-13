@@ -1,0 +1,400 @@
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.navbar a{
+    color: white;
+    font-weight: 600;
+    transition: 0.3s all;
+}
+.navbar-nav .active a{
+    color: #A65563;
+}
+.navbar a:hover{
+    color: #A65563;
+}
+.navbar-brand{
+    width: 90px;
+    height: 50px;
+    padding-top: 15px;
+}
+a{
+    text-decoration: none;
+}
+/*******************************************************************************************/
+/*******************************************************************************************/
+#home{
+    background-image: url('../kerri/header-bg.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#home .homeLayer{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home .settings{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    background-color: black;
+}
+#home .settings i{
+    border-radius: 50%;
+    animation: settingsAnimation 5s infinite;
+}
+@keyframes settingsAnimation{
+    0% {transform: rotate(0deg);}
+    /* 25% {transform: rotate();}
+    50% {}
+    75% {} */
+    100% {transform: rotate(360deg);}
+}
+#home .goTop{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #E65F78;
+}
+#home .homeLayer .homeLayerBody{
+    color: white;
+    text-align: center;
+}
+#home .homeLayer .homeLayerBody h1{
+    font-size: 3.7rem;
+}
+#home .homeLayer .homeLayerBody span::after{
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    color: white;
+    animation: IntroAnimation 10s infinite;
+}
+@keyframes IntroAnimation{
+    0% {content: "|";}
+    1% {content: "K|";}
+    2% {content: "Ke|";}
+    3% {content: "Ker|";}
+    4% {content: "Kerr|";}
+    5% {content: "Kerri|";}
+    6% {content: "Kerri D|";}
+    7% {content: "Kerri De|";}
+    15% {content: "Kerri Deo.|";} /**/
+
+    16% {content: "Kerri Deo|";}
+    17% {content: "Kerri De|";}
+    18% {content: "Kerri|";}
+    19% {content: "Kerr|";}
+    20% {content: "Ker|";}
+    21% {content: "Ke|";}
+    22% {content: "K|";}
+    23% {content: "";}
+    /**/
+    25% {content: "A|";}
+    26% {content: "A G|";}
+    27% {content: "A Gr|";}
+    28% {content: "A Gra|";}
+    29% {content: "A Grap|";}
+    30% {content: "A Graph|";}
+    31% {content: "A Graphi|";}
+    32% {content: "A Graphic|";}
+    33% {content: "A Graphic D|";}
+    34% {content: "A Graphic De|";}
+    35% {content: "A Graphic Des|";}
+    36% {content: "A Graphic Desi|";}
+    37% {content: "A Graphic Desig|";}
+    38% {content: "A Graphic Design|";}
+    39% {content: "A Graphic Designe|";}
+    40% {content: "A Graphic Designer|";}
+    48% {content: "A Graphic Designer.|";} /**/
+
+    49% {content: "A Graphic Designer|";}
+    50% {content: "A Graphic Designe|";}
+    51% {content: "A Graphic Design|";}
+    52% {content: "A Graphic Desig|";}
+    53% {content: "A Graphic Desi|";}
+    54% {content: "A Graphic Des|";}
+    55% {content: "A Graphic De|";}
+    56% {content: "A Graphic D|";}
+    57% {content: "A Graphic|";}
+    58% {content: "A Graphi|";}
+    59% {content: "A Graph|";}
+    60% {content: "A Grap|";}
+    61% {content: "A Gra|";}
+    62% {content: "A Gr|";}
+    63% {content: "A G|";}
+    64% {content: "A |";}
+    /**/
+    66% {content: "A P|";}
+    67% {content: "A Ph|";}
+    68% {content: "A Pho|";}
+    69% {content: "A Phot|";}
+    70% {content: "A Photo|";}
+    71% {content: "A Photog|";}
+    72% {content: "A Photogr|";}
+    73% {content: "A Photogra|";}
+    74% {content: "A Photograp|";}
+    75% {content: "A Photograph|";}
+    76% {content: "A Photographe|";}
+    77% {content: "A Photographer|";}
+    85% {content: "A Photographer.|";} /**/
+
+    86% {content: "A Photographer|";}
+    87% {content: "A Photographe|";}
+    88% {content: "A Photograph|";}
+    89% {content: "A Photograp|";}
+    90% {content: "A Photogra|";}
+    91% {content: "A Photogr|";}
+    92% {content: "A Photog|";}
+    93% {content: "A Photo|";}
+    94% {content: "A Phot|";}
+    95% {content: "A Pho|";}
+    96% {content: "A Ph|";}
+    97% {content: "A P|";}
+    98% {content: "A|";}
+    99% {content: "";}
+    100% {content: "";}
+}
+#home .homeLayer .homeLayerBody p{
+    color: #94BAC2;
+}
+#home .homeLayer .homeLayerBody button{
+    padding: 15px 40px;
+    border: 2px solid white;
+    font-weight: 600;
+}
+#home .mouse{
+    position: absolute;
+    bottom: 35px;
+}
+#home .mouse i{
+    animation: mouseAnimation 5s infinite;
+}
+@keyframes mouseAnimation {
+    0% {transform: translateY(0px);}
+    5% {transform: translateY(-30px);}
+    10% {transform: translateY(0px);}
+    15% {transform: translateY(-15px);}
+
+    100% {transform: translateY(0px);}
+}
+/*******************************************************************************************/
+/*******************************************************************************************/
+.Header p{
+    color: #99757D;
+}
+#about a{
+    text-decoration: none;
+}
+#about .photoSection img{
+    border: 7px double teal;
+}
+#about .aboutmeSection .Logos i{
+    color: black;
+    padding: 10px;
+    border: 2px teal solid;
+    border-radius: 50%;
+    transition: 0.3s all;
+}
+#about .aboutmeSection p{
+    color: #87757D;
+}
+#about .aboutmeSection .Logos i:hover{
+    border-color: #E65F78;
+    color: #E65F78;
+}
+/*******************************************************************************************/
+/*******************************************************************************************/
+#services{
+    background-color: #F8F9FA;
+}
+#services .eachService{
+    border: 0.5px solid #E65F78;
+    padding: 15px;
+}
+#services .eachService hr{
+    transition: 0.3s all;
+    width: 10%;
+    height: 2px;
+    background-color: #E65F78;
+}
+#services .eachService:hover hr{
+    width: 20%;
+}  
+#services .eachService p{
+    color: #87757D;
+}
+.rotate-90{
+    transform: rotate(-90deg);
+}
+/*******************************************************************************************/
+/*******************************************************************************************/
+.hireMe{
+    background-color: white;
+    text-align: center;
+}
+/*******************************************************************************************/
+/*******************************************************************************************/
+#client{
+    background-color: #F8F9FA;
+}
+#client .carousel{
+    height: 350px;
+}
+#client .carousel-indicators li{
+    width: 10px;
+    height: 5px;
+    background-color: #E65F78;
+}
+#client .carousel-indicators li.active{
+    width: 20px;
+}
+#client .carousel-inner{
+    text-align: center;
+    height: 250px;
+}
+#client .carousel-item{
+    height: 100%;
+}
+#client .carousel-item img{
+    width: 120px;
+    height: 120px;
+    padding: 4px;
+    border: 1px solid teal;
+}
+#client .carousel-caption{
+    bottom: 0;
+}
+#client .carousel-caption p{
+    color: #899096;
+}
+#client .carousel-caption h5{
+    color: black;
+}
+.rotate-180{
+    transform: rotate(180deg);
+}
+/*******************************************************************************************/
+/*******************************************************************************************/
+#portfolio .nav-tabs .nav-link {
+    border: unset;
+}
+#portfolio .nav a{
+    color: black;
+    transition: 0.3s all;
+    margin-right: 10px;
+}
+#portfolio .nav a:hover ,#portfolio .nav-link.active{
+    border-radius: 10rem;
+    background-color: #E65F78;
+    color: white;
+}
+#portfolio .nav-tabs{
+    border-bottom: unset;
+}
+#portfolio .eachWork{
+    position: relative;
+    cursor: pointer;
+}
+#portfolio .eachWork .imageLayer{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s all;
+}
+#portfolio .eachWork .imageLayer p{
+    color: #87757D;
+}
+#portfolio .eachWork .imageLayer h4{
+    color: white;
+}
+#portfolio .eachWork .imageLayer:hover{
+    opacity: 1;
+}
+/*******************************************************************************************/
+/*******************************************************************************************/
+#blog{
+    background-color: #F8F9FA;
+}
+#blog a{
+    text-decoration: none;
+    color: #E66079;
+    font-weight: 600;
+}
+#blog a h5{
+    color: black;
+    opacity: 0.8;
+    transition: 0.2s all;
+}
+#blog a h5:hover{
+    opacity: 1;
+}
+.readme{
+    color: #999FA5;
+}
+/*******************************************************************************************/
+/*******************************************************************************************/
+#contact .section p{
+    color: #99757D;
+}
+#contact form input , #contact form textarea{
+    height: 50px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+#contact form textarea{
+    height: 150px;
+}
+#contact form input:focus , #contact form textarea:focus{
+    border: 2px solid #E65F78;
+}
+#contact .rightbtn{
+    display: flex;
+    flex-direction: row-reverse;
+}
+/*******************************************************************************************/
+/*******************************************************************************************/
+.footer{
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #6C757D;
+}
+.footer .logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer a i{
+    background-color: #343434;
+    padding: 15px;
+    color: #6C757D;
+    border-radius: 50%;
+    margin-right: 15px;
+}
